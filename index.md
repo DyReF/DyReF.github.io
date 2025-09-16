@@ -26,24 +26,22 @@ Robotic planning tasks often involve diverse complexities, which make adaptive i
 
 
 ## Results
-Comparison of FCRF and baseline reflection method in an AlfWorld example:
+Performance of our DyRef in an AlfWorld example:
 
 <div align='center'>
-  <img src="./sim_example.pdf">
+  <img src="./sim_example.png">
 </div>
 
 ## Methodology
-The framework of FCRF. The planning process is executed by the Actor LLM, the reflection process is executed by the Mentor LLM. During
-the self-reflection process, the difficulty level of the task is first assessed, according to which the Mentor flexibly selects reflection intensity, determine the proportion of simple experience retain and in-depth failure lessons extraction among all the reflection episodes. Combining the valuable experience and failure lesson, the Mentor performs a constructivism self-reflection to guide the next round of planning of the Actor. The reflection results and planning trajectories will be stored in the memory module for long-term management.
-
+DyRef dynamically allocates reflection strategy according to task complexity. The pipeline consists of three components: (i) a hierarchical Diagnostic Graph that encodes task structure from descriptions and execution trajectories; (ii) four topological Complexity Factors (Dependency, Interaction, Spatial, Structure) derived from the graph, providing a structured representation of task complexity; (iii) a Routing Policy that leverages these factors to select tools from the Reflection Toolkit, enabling adaptive reflection and plan revision.
 <div align='center'>
-  <img src="./fig2_00.png">
+  <img src="./method.png">
 </div>
 
 <br/>
 
 <div align='center'>
-  <img src="./fig3_00.png">
+  <img src="./tool.png">
 </div>
 
 
