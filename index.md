@@ -11,7 +11,21 @@
 -->
 
 ## Abstract
-Robotic planning tasks often involve diverse complexities, which make adaptive improvement through reflection particularly challenging. Existing LLM-based approaches typically rely on fixed routines, lacking the ability to adjust to task-specific complexity and often leading to redundant reflections. To address this, we propose DyRef, a dynamic reflection framework that models tasks as a Diagnostic Graph, measures tasks complexity through structural factors, and routes them through a Reflection Toolkit via a learned Routing Policy network. This design enables tailored reflection strategies that reduce redundancy and improve reasoning efficiency. Experiments in AlfWorld and on real-world robotic platforms show that DyRef improves success rates by 38.0% reducing redundant reflections by 64.4%. Project webpage (no author information) : https://DyRef.github.io/
+Robotic planning tasks often involve diverse com-
+plexities, which make adaptive improvement through reflection
+particularly challenging. Existing LLM-based approaches typi-
+cally rely on fixed routines, lacking the ability to adjust to task-
+specific complexity and often leading to redundant reflections.
+To address this, we propose DyRef, a dynamic reflection frame-
+work that models tasks as a Diagnostic Graph, measures task
+complexity through structural factors, and routes them through
+a Reflection Toolkit via a learned Routing Policy network.
+This design enables tailored reflection strategies that reduce
+redundancy and improve reasoning efficiency. Experiments in
+AlfWorld and on real-world robotic platforms show that DyRef
+improves success rates by 16.1%, while reducing redundant
+reflections by 64.4%. Project webpage (anonymized, no author
+information): https://DyRef.github.io/
 
 ## Paper
 <iframe  width="400" height="420" src="./DyRef.pdf"></iframe>
