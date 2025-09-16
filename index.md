@@ -11,18 +11,18 @@
 -->
 
 ## Abstract
-Autonomous error correction is critical for domestic robots to achieve reliable execution of complex long-horizon tasks. Prior work has explored self-reflection in Large Language Models (LLMs) for task planning error correction; however, existing methods are constrained by inflexible self-reflection mechanisms that limit their effectiveness. Motivated by these limitations and inspired by human cognitive adaptation, we propose the Flexible Constructivism Reflection Framework (FCRF), a novel Mentor-Actor architecture that enables LLMs to perform flexible self-reflection based on task difficulty, while constructively integrating historical valuable experience with failure lessons. We evaluated FCRF on diverse domestic tasks through simulation in AlfWorld and physical deployment in the real-world environment. Experimental results demonstrate that FCRF significantly improves overall performance and self-reflection flexibility in complex long-horizon robotic tasks. 
+Robotic planning tasks often involve diverse complexities, which make adaptive improvement through reflection particularly challenging. Existing LLM-based approaches typically rely on fixed routines, lacking the ability to adjust to task-specific complexity and often leading to redundant reflections. To address this, we propose DyRef, a dynamic reflection framework that models tasks as a Diagnostic Graph, measures tasks complexity through structural factors, and routes them through a Reflection Toolkit via a learned Routing Policy network. This design enables tailored reflection strategies that reduce redundancy and improve reasoning efficiency. Experiments in AlfWorld and on real-world robotic platforms show that DyRef improves success rates by 38.0% reducing redundant reflections by 64.4%. Project webpage (no author information) : https://DyRef.github.io/
 
 ## Paper
-<iframe  width="400" height="420" src="./FCRF_Flexible_Constructivism_Reflection_for_Long_Horizon_Robotic_Task_Planning_with_Large_Language_Models.pdf"></iframe>
+<iframe  width="400" height="420" src="./DyRef.pdf"></iframe>
 
-## Video
+<!-- ## Video
 
 <div align='center'>
   <video id="video" controls="" preload="none" poster="作者(图片地址)">
     <source id="mp4" src="./video1.mp4" type="video/mp4">
   </video>
-</div>
+</div> -->
 
 
 ## Results
