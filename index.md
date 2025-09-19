@@ -109,7 +109,7 @@ DyRef dynamically allocates reflection strategy according to task complexity. Th
     Strictly follow the format of example, summarize the valuable actions directly in concise language, without adding your own divergent thoughts.
   
 
-### 3.Reflection Tool 2： Prompt of Failure Lesson Summary
+### 3.Reflection Tool 3： Prompt of Failure Lesson Summary
     You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
     You were unsuccessful in completing the task.
     Now to solve your mistake, I will give you a mentor lesson pool, in which listed typical constraints of your task environment.
@@ -133,10 +133,10 @@ DyRef dynamically allocates reflection strategy according to task complexity. Th
 
 
 
-### 3.Prompt of Comprehensive Construction Process
+### Prompt of Comprehensive Construction Process
     You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
     You were unsuccessful in completing the task.
-    Now I will give you valuable experience summarization and failure lesson summarization based on your previous experience. 
+    Now I will give you valuable experience summarization 、key_rule nad failure lesson summarization based on your previous experience. 
     Please create a plan for the next attempt with reference to specific actions that you should have taken, incorporating insights from these two analyses. 
     You need to output in the format of the example without any additional redundant content.
     I will give you some examples to help you better understand how to generate plan.
@@ -149,6 +149,9 @@ DyRef dynamically allocates reflection strategy according to task complexity. Th
     
     Here is the valuable experience you need for generating plan:
     {experience}
+
+    Here is the key rule you need for generating plan:
+    {key_rule}
     
     Here is the failed lesson you need for generating plan:
     {lesson}
