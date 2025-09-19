@@ -56,7 +56,41 @@ DyRef dynamically allocates reflection strategy according to task complexity. Th
 
 
 ## Appendix
-### 1.Prompt of Valuable Experience Summary Process
+### 1.Reflection Tool 1：Prompt of Key Rule Extraction
+
+    You need to extract the location of task operations, whether tools are required, 
+    the actions to be performed, and whether prerequisites are needed from the correct cases. Below are two examples:
+
+    
+    Here are two examples:
+
+    =================The first example=====================
+    Your task type is clean.
+
+    The correct case is:
+    {d[f'react_clean_0']}
+    
+    Case Reinforce result:
+    You need to go to the sinkbasin.No additional tools are required for cleaning.You can clean it directly after reaching the sinkbasin.
+    =================The second example=====================
+    Your task type is cool.
+    
+    The correct case is:
+    {d[f'react_cool_0']}
+
+    Case Reinforce result:
+    You need to go to the fridge.No additional tools are required for cooling.Then cool it directly after reachinhg the fridge.
+
+  
+    Your task type is {v}.
+
+    The correct case is:
+    {d[f'react_{v}_0']}
+     
+    Output only one sentence; do not output any extra content. Case Reinforce result:
+
+
+### 2.Reflection Tool 2：Prompt of Experience Summary
 
     You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
     You were unsuccessful in completing the task.
@@ -75,7 +109,7 @@ DyRef dynamically allocates reflection strategy according to task complexity. Th
     Strictly follow the format of example, summarize the valuable actions directly in concise language, without adding your own divergent thoughts.
   
 
-### 2.Prompt of Failure Lesson Summary Process
+### 3.Reflection Tool 2： Prompt of Failure Lesson Summary
     You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
     You were unsuccessful in completing the task.
     Now to solve your mistake, I will give you a mentor lesson pool, in which listed typical constraints of your task environment.
